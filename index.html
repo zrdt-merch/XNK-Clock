@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <!-- Required: without this, mobile browsers lay the page out at ~980px and the clock inside
+       the iframe gets the wrong size. viewport-fit=cover lets the black shell reach the screen
+       edges; style.css keeps the iframe itself clear of notches/rounded corners. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <title>XNK - Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- DEPLOYMENT CONFIG: the ONLY place the Apps Script Web App URL lives.
+       Replace the src value with the /exec URL from Deploy > Manage deployments.
+       `allow` must keep fullscreen and screen-wake-lock, or the app hides those features. -->
+  <iframe
+    id="app"
+    src="https://script.google.com/macros/s/AKfycbzkAn3r0YngDfUloTIb_UBIVE9wPmS45JhDySs2dnqJkxZ41SE88YtENlhkYo4dSzR8Mg/exec"
+    allow="fullscreen; screen-wake-lock; autoplay"
+    title="Infinix Clock OS"></iframe>
+</body>
+</html>
